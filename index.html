@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title></title>
+    <meta name="description" content="Portfolio Template for Developer" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .home-hero{
+      background-image: url('assets/jpeg/myphoto.jpeg');
+      background-size: cover;
+      color: black;
+      background-position: center;
+      height: 50vh;
+      min-height: 50rem;
+      max-height: 100rem;
+      position: relative;
+      }
+
+       @import url(https://fonts.googleapis.com/css?family=Khula:700); */
+
+
+      .hidden {
+        opacity:  0.5;
+      }  
+
+      .console-container {
+        font-family: khula;
+        text-align: center;
+        /* height: 200px;
+        width: 400px; */
+        display: block;
+        position: relative;
+        color: white;
+        top: 0;
+        bottom: 5;
+        left: 0;
+        right: 0;
+        margin-top: 300px;
+        font-size: 24px;
+      }
+
+      .console-underscore {
+        display: inline-block;
+        position: relative;
+        top: -0.5em;
+        left: 10px;
+
+      }
+      @media only screen and (max-width: 600px) {
+    .console-container {
+        /* width: 100%; */
+        margin-top: 10px;
+        font-style: bold;
+    }
+    
+    #text {
+        font-size: 20px; /* Adjust the font size for smaller screens */
+    }
+
+    .console-underscore {
+        left: 5px;
+    }
+
+    .home-hero__cta{
+      margin-bottom: 190px;
+    
+    }
+    .projects_note{
+      margin-right: 80px;
+      padding: 50px;
+      font-size: 2rem;
+      position: relative;
+    }
+  }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/png/photo.png"
+              alt="Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Anita Torki</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#education" class="header__link"> Education </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#experience" class="header__link"> Experience </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+          
+          </ul>
+         
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#education" class="header__link"> Education </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#experience" class="header__link"> Experience </a>
+            </li>
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+<!-- 
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section class="home-hero">
+      <div class="home-hero__content">
+        <div class='console-container'>
+          <span id='text' style='font-size: 34px;'></span>
+          <div class='console-underscore' id='console'>&#95;</div>
+        </div>
+      
+        <div class="home-hero__cta">
+          <a href="./assets/files/Resume.pdf" class="btn btn--bg" >Download Resume</a>
+        </div>
+      </div>
+      <div class="home-hero__socials">
+        <div class="home-hero__social">
+          <a href="https://www.linkedin.com/in/anita-torki/" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/linkedin.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+            
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="https://github.com/Anitatrkh" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/github.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <a href="mailto:anita.trkh@gmail.com" class="home-hero__social-icon-link">
+          <img
+            src="./assets/png/gmail.png" 
+            alt="Email icon"
+            class="home-hero__social-icon" 
+          />
+        </a>
+      </div>
+      <div class="home-hero__mouse-scroll-cont">
+        <div class="mouse"></div>
+      </div>
+    </section>
+
+
+     <!-- About Me Section -->
+    <section id="about" class="about sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">About Me</span>
+          <span class="heading-sec__sub">    
+          </span>
+        </h2>
+        <div class="about__content">
+          <div class="about__content-main">
+            <h3 class="about__content-title">Get to know me!</h3>
+            <div class="about__content-details">
+              <p class="about__content-details-para">
+                Hello! I'm
+                <strong>Anita Torki</strong>, an Information Technology Programming and Analyst graduate from College LaSalle of Montréal, class of 2023. My passion lies at the intersection of Front End Engineering and People Analytics. I take great pleasure in crafting aesthetically pleasing and high-performance products that provide users with delightful experiences.
+                <br><br>
+                In my previous role as an intern at <strong>Plumfind,</strong> I led the development of a home page and landing page project, focusing on enhancing fashion brands for various companies.
+              </p><br>
+              <p class="about__content-details-para">
+                Before Plumfind, I gained valuable experience working for a year at <strong>Falat Sanat Ideh in Tehran,</strong> where I served as a project manager and tender lead. I contributed to water treatment solutions based on innovative technologies for municipal, industrial, and energy end-users.
+                <br>
+                <br>Prior to Tehran, I spent <strong>eight years as a Health and Safety Officer at an Oil refinery in Abadan.</strong> During this time, I designed a mental health evaluation test, established a systematic assessment process, and conducted face-to-face interviews for behavior analysis. The positive findings and recommendations I presented to management had a meaningful impact on mental health and behavior in both work and family contexts, leading to an increase in the life expectancy of workers.
+                <br><br>
+                Feel free to <strong>contact</strong> me <a href="mailto:anita.trkh@gmail.com" class="dynamicBgClr">here</a>.
+              </p>
+            </div>
+            <a href="mailto:anita.trkh@gmail.com" class="btn btn--med btn--bg dynamicBgClr" style="background-color: #637A9F;">Contact</a>
+          </div>
+
+          <!-- Skills Section -->
+          <div class="about__content-skills">
+            <h3 class="about__content-title">My Skills</h3>
+            <div class="skills">
+              <div class="skills__skill">HTML5</div>
+              <div class="skills__skill">CSS</div>
+              <div class="skills__skill">JavaScript</div>
+              <div class="skills__skill">React</div>
+              <div class="skills__skill">SASS</div>
+              <div class="skills__skill">GIT</div>
+              <div class="skills__skill">Bootstrap</div>
+              <div class="skills__skill">Wordpress</div>
+              <div class="skills__skill">SQL</div>
+              <div class="skills__skill">Oracle</div>
+              <div class="skills__skill">MangoDB</div>
+              <div class="skills__skill">Java</div>
+              <div class="skills__skill">Python</div>
+              <div class="skills__skill">R</div>
+              <div class="skills__skill">Go</div>
+              <div class="skills__skill">Android</div>
+              <div class="skills__skill">PHP</div>
+              <div class="skills__skill">C#</div>
+              <div class="skills__skill">ASP.Net Core MVC</div>
+              <div class="skills__skill">Web API</div>
+              <div class="skills__skill">Node.js</div>
+              <div class="skills__skill">Vue.js</div>
+              <div class="skills__skill">Angular</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  <!-- Education Section -->
+
+  <section id="education" class="contact sec-pad dynamicBg">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-med">
+        <span class="heading-sec__main heading-sec__main--lt">Education</span>
+        <span class="heading-sec__sub heading-sec__sub--lt">
+          
+        </span>
+      </h2>
+      <div class="contact__form-container">
+        <div class="education-item">
+          <h3>Diploma in Information Technology Programming and Analyst</h3>
+          <p>College LaSalle, Montréal (Graduated: January 2024)</p>
+        </div>
+        <div class="education-item">
+          <h3>Master of Arts in Psychology</h3>
+          <p>Ahwaz University, Iran (Graduated: January 2019)</p>
+        </div>
+        <div class="education-item">
+          <h3>Bachelor of Engineering</h3>
+          <p>Abadan University, Iran (Graduated: January 2017)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <!-- Experience Section -->
+  <section id="experience" class="contact sec-pad dynamicBg">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-med">
+        <span class="heading-sec__main heading-sec__main--lt">Experience</span>
+        <span class="heading-sec__sub heading-sec__sub--lt">
+          
+        </span>
+      </h2>
+      <div class="contact__form-container">
+        <!-- List of Experience Items -->
+        <div class="experience-item">
+          <h3>PlumFind Co, Montréal | Front End Developer & Product Design (Internship)(Sep 2023 - Jan 2024)</h3>
+          <ul>
+            <li>Developed engaging and optimized web pages for high-traffic events.</li>
+            <li>Revamped the homepage to improve user satisfaction.</li>
+            <li>Collaborated effectively in agile, cross-functional teams.</li>
+            <li>Ensured code integrity and promoted teamwork through Git version control.</li>
+            <li>Designed and implemented landing pages for fashion brands.</li>
+            <li>Optimized page performance and responsiveness.</li>
+            <li>Implemented advanced data structures and algorithms to optimize system performance.</li>
+            <li>Validated user input before submitting to the back-end.</li>
+          </ul>
+        </div>
+      
+        <div class="experience-item">
+          <h3>College LaSalle, Montréal | Client Service Representative (On Call)(Fall and Winter Semesters)</h3>
+          <ul>
+            <li>Assisted students and prospective applicants, guiding them through program details and admission processes.</li>
+            <li>Guided new students in making online tuition payments.</li>
+            <li>Assisted in issuing student identification cards and showcased campus amenities to new students.</li>
+            <li>Collaborated with colleagues to address inquiries, fostering a professional and client-focused college environment.</li>
+          </ul>
+        </div>
+        <div class="experience-item">
+          <h3>Falat Sanat Ideh Co., Iran | Project Manager (Full Time)(July 2020 - July 2021)</h3>
+          <ul>
+            <li>Led robust Project Management System development.</li>
+            <li>Managed end-to-end proposal processes for water treatment systems.</li>
+            <li>Maintained code integrity and optimized system performance.</li>
+            <li>Managed end-to-end proposal processes for water treatment systems, crafting detailed technical and financial proposals.</li>
+            <li>Facilitated seamless communication between manufacturing and trading departments, ensuring timely equipment purchases for project implementations.</li>
+            <li>Spearheaded the development and maintenance of a robust Project Management System, implementing effective data cleaning procedures to enhance decision-making.</li>  
+          </ul>
+        </div>
+        <div class="experience-item">
+          <h3>Oil Refinery Co, Iran | Health & Safety Officer (Full Time)(Nov 2012 - July 2020)</h3>
+          <ul>
+            <li>Designed mental health evaluation test. Established a systematic assessment process.</li>
+            <li>Conducted face-to-face interviews for behavior analysis.</li>
+            <li>Presented findings and recommendations to management.</li>
+            <li>Implemented a mental health evaluation test, establishing a systematic assessment process.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- projects Section -->
+
+<section id="projects" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Projects</span>
+          <span class="heading-sec__sub">
+           
+          </span>
+        </h2>
+
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpg/indexmain.jpg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Online Psychotherapy Project</h3>
+              <p class="projects__row-content-desc">
+              </p>
+              <a
+                href="./project-1.html"
+                class="btn btn--med btn--bg dynamicBgClr"
+                target="_blank"
+                style="background-color: #637A9F;" >More Information</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/png/income2.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Income Tracker Project</h3>
+              <p class="projects__row-content-desc"> 
+              </p>
+              <a
+                href="./project-2.html"
+                class="btn btn--med btn--bg dynamicBgClr"
+                target="_blank"
+                style="background-color: #637A9F;">More Information</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/png/prj-rent1.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Rental Application Project</h3>
+              <p class="projects__row-content-desc">
+              </p>
+              <a
+                href="./project-3.html"
+                class="btn btn--med btn--bg dynamicBgClr"
+                target="_blank"
+                style="background-color: #637A9F;">More Information</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="projects_note">If you wish to view all projects, please <a href="mailto:anita.trkh@gmail.com" style="color: #0C359E; font-style: italic;">contact me</a>,  as some projects on my GitHub account are set to private!</p>
+      
+
+      
+    </section>
+    
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/anita-torki/">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://github.com/Anitatrkh">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ic.png"
+                  alt="icon"
+                />
+              </a>
+              
+              
+            </div>
+          </div>
+              <div class="main-footer__row main-footer__row-2">
+                <h4 class="heading heading-sm text-lt">Professional Programmer</h4>
+                <p class="main-footer__short-desc">
+                  Information Technology Programming and Analysis graduate from College LaSalle of Montréal, Canada.
+                </p>
+              </div>
+            </div>
+
+            <div class="main-footer__lower">
+              &copy; Copyright 2024. Made by
+              <a rel="noreferrer" target="_blank" href=""
+                >Anita Torki</a
+              >
+            </div>
+          </div>
+    </footer>
+
+    <script src="./index.js"></script>
+
+   
+  <script>
+  // function([string1, string2],target id,[color1,color2])    
+consoleText(['Hello!', 'My name is Anita Torki.', 'Welcome to my portfolio.'], 'text', ['rebeccapurple', '#81689D', '#3652AD', '#0C359E']);
+
+function consoleText(words, id, colors) {
+  if (colors === undefined) colors = ['#fff'];
+  var visible = true;
+  var con = document.getElementById('console');
+  var letterCount = 1;
+  var x = 1;
+  var waiting = false;
+  var target = document.getElementById(id);
+  target.setAttribute('style', 'color:' + colors[0]);
+  window.setInterval(function () {
+    if (letterCount === 0 && waiting === false) {
+      waiting = true;
+      target.innerHTML = words[0].substring(0, letterCount);
+      window.setTimeout(function () {
+        var usedColor = colors.shift();
+        colors.push(usedColor);
+        var usedWord = words.shift();
+        words.push(usedWord);
+        x = 1;
+        target.setAttribute('style', 'color:' + colors[0]);
+        letterCount += x;
+        waiting = false;
+      }, 1000);
+    } else if (letterCount === words[0].length + 1 && waiting === false) {
+      waiting = true;
+      window.setTimeout(function () {
+        x = -1;
+        letterCount += x;
+        waiting = false;
+      }, 1000);
+    } else if (waiting === false) {
+      target.innerHTML = words[0].substring(0, letterCount);
+      letterCount += x;
+    }
+  }, 120);
+  window.setInterval(function () {
+    if (visible === true) {
+      con.className = 'console-underscore hidden';
+      visible = false;
+    } else {
+      con.className = 'console-underscore';
+      visible = true;
+    }
+  }, 400);
+}
+
+</script>
+  </body>
+</html>
