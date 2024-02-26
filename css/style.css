@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-  font-family: inherit; }
+  font-family: sans-serif; }
 
 html {
   font-size: 62.5%;
@@ -80,17 +80,17 @@ textarea {
   margin-bottom: 3.5rem;
   position: relative; }
   .heading-sec__main--lt {
-    color: #637A9F; }
+    color: black; }
     .heading-sec__main--lt::after {
       content: '';
-      background: #fff !important; }
+      background: #637A9F !important; }
   .heading-sec__main::after {
     content: '';
     position: absolute;
     top: calc(100% + 1.5rem);
     height: 5px;
     width: 3rem;
-    background: #022267;
+    background: #637A9F;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 5px; }
@@ -191,8 +191,8 @@ textarea {
   .home-hero__socials {
     position: absolute;
     top: 35%;
-    border: 2px solid #0062b9;
-    border-left: 2px solid #0062b9;
+    border: 2px solid #637A9F;
+    border-left: 2px solid #637A9F;
     transform: translateY(-50%); }
     @media only screen and (max-width: 56.25em) {
       .home-hero__socials {
@@ -211,7 +211,7 @@ textarea {
     width: 100%;
     display: block;
     padding: 1.4rem;
-    border-bottom: 2px solid #0062b9;
+    border-bottom: 2px solid #637A9F;
     transition: background .3s; }
     .home-hero__social-icon-link:hover {
       background: rgba(173, 176, 216, 0.849); }
@@ -260,7 +260,7 @@ textarea {
         .about__content-title {
           font-size: 2.4rem; } }
     .about__content-details-para {
-      font-size: 1.8rem;
+      font-size: 1.9rem;
       color: grey;
       max-width: 60rem;
       line-height: 1.7;
@@ -342,14 +342,13 @@ textarea {
             background-color: #637A9F;
           }
 .contact {
-  /* background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg); */
-  background: linear-gradient(to right, rgba(209, 209, 209, 0.8), rgba(149, 202, 255, 0.8)), url(../../assets/svg/common-bg.svg);
-
+  background: linear-gradient(to right, rgba(209, 209, 209, 0.8), #637A9F), url(../../assets/svg/common-bg.svg);
   background-size: cover;
+  color: #fff;
   background-position: center; }
   .contact__form-container {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background: white;
+    background: #637A9F;
     padding: 4rem;
     margin-top: 6rem;
     max-width: 80rem;
@@ -624,8 +623,9 @@ textarea {
     border-bottom: 0; }
 
 .main-footer {
-  background: #000;
-  color: #fff; }
+  /* background: linear-gradient(to right, rgba(209, 209, 209, 0.8), #637A9F), url(../../assets/svg/common-bg.svg); */
+background-color: #637A9F;
+  color: black; }
   .main-footer__upper {
     display: flex;
     justify-content: space-between;
@@ -638,9 +638,11 @@ textarea {
         display: block; } }
   .main-footer__row-1 {
     order: 2; }
+
     @media only screen and (max-width: 56.25em) {
       .main-footer__row-1 {
         margin-bottom: 5rem; } }
+
   .main-footer__row-2 {
     width: 40%;
     order: 1;
@@ -648,18 +650,24 @@ textarea {
     @media only screen and (max-width: 56.25em) {
       .main-footer__row-2 {
         width: 100%; } }
+
+
   .main-footer__short-desc {
     margin-top: 2rem;
-    color: #eee;
+    color: black;
     font-size: 1.5rem;
     line-height: 1.7; }
+
   .main-footer__social-cont {
     margin-top: 2rem; }
+
   .main-footer__icon {
     margin-right: 1rem;
     width: 2.5rem; }
+
     .main-footer__icon--mr-none {
       margin-right: 0; }
+
   .main-footer__lower {
     padding: 4rem 0;
     border-top: 1px solid #444;
@@ -678,18 +686,19 @@ textarea {
 .skills {
   display: flex;
   flex-wrap: wrap; }
+
+
   .skills__skill {
     padding: 1.5rem 1rem;
     margin-bottom: 1.9rem;
     margin-top: 1.9rem;
-
     margin-right: 1.9rem;
     margin-left: 1.9rem;
     font-size: 1.6rem;
-    background: #C9D7DD;
+    background: #637A9F;
     border-radius: 8px;
     font-weight: 600;
-    color: #7e7e7e; }
+    color: white; }
 
 .mouse {
   width: 25px;
@@ -698,6 +707,7 @@ textarea {
   border-radius: 60px;
   position: relative;
   overflow: hidden; }
+
   .mouse::before {
     content: '';
     width: 5px;
@@ -809,3 +819,8 @@ textarea {
       padding: 40px 0;
 
     }
+
+
+
+
+    

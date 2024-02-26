@@ -83,6 +83,10 @@
       position: relative;
     }
   }
+
+  .btn_projects_note{
+    margin-left: 160px;
+  }
     </style>
   </head>
   <body>
@@ -117,7 +121,6 @@
                 Projects
               </a>
             </li>
-          
           </ul>
          
         </div>
@@ -141,10 +144,7 @@
             <li class="header__sm-menu-link">
               <a href="./index.html#projects"> Projects </a>
             </li>
-<!-- 
-            <li class="header__sm-menu-link">
-              <a href="./index.html#contact"> Contact </a>
-            </li> -->
+
           </ul>
         </div>
       </div>
@@ -161,7 +161,7 @@
           <a href="./assets/files/Resume.pdf" class="btn btn--bg" >Download Resume</a>
         </div>
       </div>
-      <div class="home-hero__socials">
+      <!-- <div class="home-hero__socials">
         <div class="home-hero__social">
           <a href="https://www.linkedin.com/in/anita-torki/" class="home-hero__social-icon-link">
             <img
@@ -188,10 +188,8 @@
             class="home-hero__social-icon" 
           />
         </a>
-      </div>
-      <div class="home-hero__mouse-scroll-cont">
-        <div class="mouse"></div>
-      </div>
+      </div> -->
+      
     </section>
 
 
@@ -221,7 +219,10 @@
                 Feel free to <strong>contact</strong> me <a href="mailto:anita.trkh@gmail.com" class="dynamicBgClr">here</a>.
               </p>
             </div>
-            <a href="mailto:anita.trkh@gmail.com" class="btn btn--med btn--bg dynamicBgClr" style="background-color: #637A9F;">Contact</a>
+            <a href="mailto:anita.trkh@gmail.com" class="btn btn--med btn--bg dynamicBgClr" style="background-color: #637A9F; color: white;">Contact</a>
+            <a href="https://www.linkedin.com/in/anita-torki/" class="btn btn--med btn--bg dynamicBgClr" style="background-color: #637A9F; color: white;">linkedin</a>
+            <!-- <a href="https://github.com/Anitatrkh" class="btn btn--med btn--bg dynamicBgClr" style="background-color: #637A9F; color: white;">GitHub</a> -->
+
           </div>
 
           <!-- Skills Section -->
@@ -372,7 +373,7 @@
                 href="./project-1.html"
                 class="btn btn--med btn--bg dynamicBgClr"
                 target="_blank"
-                style="background-color: #637A9F;" >More Information</a
+                style="background-color: #637A9F; color: white;" >More Information</a
               >
             </div>
           </div>
@@ -393,7 +394,7 @@
                 href="./project-2.html"
                 class="btn btn--med btn--bg dynamicBgClr"
                 target="_blank"
-                style="background-color: #637A9F;">More Information</a
+                style="background-color: #637A9F; color: white;">More Information</a
               >
             </div>
           </div>
@@ -414,25 +415,34 @@
                 href="./project-3.html"
                 class="btn btn--med btn--bg dynamicBgClr"
                 target="_blank"
-                style="background-color: #637A9F;">More Information</a
+                style="background-color: #637A9F; color: white;">More Information</a
               >
             </div>
           </div>
         </div>
       </div>
-
       <p class="projects_note">If you wish to view all projects, please <a href="mailto:anita.trkh@gmail.com" style="color: #0C359E; font-style: italic;">contact me</a>,  as some projects on my GitHub account are set to private!</p>
-      
+      <div class="btn_projects_note">
+
+      <a href="mailto:anita.trkh@gmail.com" class="btn btn--med btn--bg dynamicBgClr" style="background-color: #637A9F; color: white;">Contact</a>
+      <a href="https://www.linkedin.com/in/anita-torki/" class="btn btn--med btn--bg dynamicBgClr" style="background-color: #637A9F; color: white;">linkedin</a>
+      <a href="https://github.com/Anitatrkh" class="btn btn--med btn--bg dynamicBgClr" style="background-color: #637A9F; color: white;">GitHub</a> 
+    </div>
 
       
     </section>
+
+
+
+
+
     
     <footer class="main-footer">
       <div class="main-container">
         <div class="main-footer__upper">
           <div class="main-footer__row main-footer__row-1">
             <h2 class="heading heading-sm main-footer__heading-sm">
-              <span>Social</span>
+              <span>Contact</span>
             </h2>
             <div class="main-footer__social-cont">
               <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/anita-torki/">
@@ -449,7 +459,12 @@
                   alt="icon"
                 />
               </a>
-              
+              <a  target="_blank" rel="noreferrer" href="mailto:anita.trkh@gmail.com" >
+                <img
+                  src="./assets/png/gmail.png" 
+                  alt="Email icon"
+                  class="main-footer__icon"                />
+              </a>
               
             </div>
           </div>
@@ -475,7 +490,7 @@
    
   <script>
   // function([string1, string2],target id,[color1,color2])    
-consoleText(['Hello!', 'My name is Anita Torki.', 'Welcome to my portfolio.'], 'text', ['rebeccapurple', '#81689D', '#3652AD', '#0C359E']);
+consoleText(['Hello!', 'I am Anita .', 'Welcome to my portfolio.'], 'text', ['#637A9F', 'white',]);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
