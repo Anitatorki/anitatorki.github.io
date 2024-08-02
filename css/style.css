@@ -253,7 +253,8 @@ textarea {
         grid-template-columns: 1fr;
         grid-gap: 8rem; } }
     .about__content-title {
-      font-weight: 700;
+    
+      font-weight: 400;
       font-size: 2.8rem;
       margin-bottom: 3rem; }
       @media only screen and (max-width: 37.5em) {
