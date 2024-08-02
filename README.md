@@ -4,47 +4,13 @@ Hello, I'm Anita Torki, a passionate front-end developer with a keen interest in
 
 ## About Me
 
-I have a strong foundation in front-end development and a deep fascination for leveraging data science techniques in the field of psychology research. My goal is to bridge the gap between technology and psychology, creating impactful solutions through innovative applications.
+Every day is a chance to explore the depths of the mind and innovate with purpose!
 
-## Education
+As a software engineer with a background in psychology, I excel in tackling complex challenges and pushing the boundaries of what’s possible. My experience spans full stack development (front-end and back-end), machine learning, Natural Language Processing (NLP), and applying psychological principles to technology.
 
-- **College LaSalle, Montréal | Information Technology Programmer-Analyst**
-  - Graduated: January 2024
+I craft innovative solutions that blend technical expertise with a deep understanding of human behavior, aiming to bridge the gap between technology and human insight.
 
-- **Ahwaz University, Iran | Master of Art-Psychology**
-  - Graduated: January 2019
-
-- **Abadan University, Iran | Bachelor of Engineering**
-  - Graduated: January 2017
-
-## Experience
-
-- **PlumFind Co, Montréal | Front End Developer & Product Design (Internship)**
-  - September 2023 - January 2024
-  - Developed powerful, reliable, and engaging online systems.
-  - Crafted visually appealing and user-friendly pages.
-  - Collaborated effectively in agile, cross-functional teams.
-  - Resolved front-end issues and implemented data tracking for user engagement metrics.
-
-- **College LaSalle, Montréal | Client Service Representative**
-  - Two Semesters
-  - Assisted students and prospective applicants, guiding them through program details and admission processes.
-  - Guided new students in making online tuition payments.
-  - Assisted in issuing student identification cards and showcased campus amenities to new students.
-  - Collaborated with colleagues to address inquiries, fostering a professional and client-focused college environment.
-
-- **Falat Sanat Ideh Co., Iran | Project Manager (Full Time)**
-  - July 2020 - July 2021
-  - Led robust Project Management System development.
-  - Managed end-to-end proposal processes for water treatment systems.
-  - Maintained code integrity and optimized system performance.
-  - Facilitated seamless communication between manufacturing and trading departments.
-
-- **Oil Refinery Co, Iran | Health & Safety Officer (Full-Time)**
-  - Nov 2012 - July 2021
-  - Designed a mental health evaluation test.
-  - Conducted face-to-face interviews for behavior analysis.
-  - Presented findings and recommendations to management.
+Let’s connect to explore opportunities for collaboration or if you’re seeking advanced solutions in software engineering and data science!****
 
 ## Skills
 
@@ -71,8 +37,9 @@ I have a strong foundation in front-end development and a deep fascination for l
 
 
 ## Workshops and Certificates
-
-- **Data from Dirty to Clean at Coursera (Winter 2024)**
+- **Machine Learning with TensorFlow from Google Cloud - Coursera, Summer 2024**
+- **Machine Learning with Python – Maktabkhone Center, Summer 2024**
+- **Machine Learning: AI, Python, R + ChatGPT – Udemy, Winter 2024**
 - **The Complete 2023 Web Development Bootcamp at Udemy (Summer 2023)**
 - **Web Developers at Coursera (Winter 2022)**
 - **Programming with Python at Coursera (Fall 2021)**
