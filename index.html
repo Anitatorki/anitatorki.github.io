@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anita Torki | Data Analyst and Aspiring Data Scientist</title>
+<meta name="description" content="Anita Torki is a Toronto-based data analyst with a research background, building toward data science with Python, SQL, statistics, and machine learning.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@500;600&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f7f9;--ink:#13233a;--muted:#55657a;--line:#d8dfe7;--accent:#0b6e75;--accent-soft:#e0f0f1;--card:#fff;--soon:#8a5a14;--soon-bg:#fbefd9}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 Figtree,system-ui,sans-serif}
+h1,h2,h3{font-family:Newsreader,Georgia,serif;line-height:1.2;margin:0}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header.nav{position:sticky;top:0;z-index:5;background:rgba(245,247,249,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+.nav strong{font-family:Newsreader,serif;font-size:1.2rem}
+.nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0}
+.nav a{text-decoration:none;color:var(--muted);font-weight:500;font-size:.95rem}
+.nav a:hover{color:var(--accent)}
+.hero{padding:80px 0 64px}
+.hero h1{font-size:clamp(2.2rem,5vw,3.5rem);font-weight:600;letter-spacing:-.01em;max-width:18em}
+.hero p.lead{font-size:1.2rem;color:var(--muted);margin:20px 0 28px;max-width:36em}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:11px 20px;border-radius:6px;font-weight:600;text-decoration:none;border:1.5px solid var(--accent)}
+.btn.primary{background:var(--accent);color:#fff}
+.btn.primary:hover{background:#085a60}
+.btn.ghost{color:var(--accent)}
+.btn.ghost:hover{background:var(--accent-soft)}
+.meta{margin-top:22px;color:var(--muted);font-size:.95rem}
+section{padding:56px 0;border-top:1px solid var(--line)}
+section>.wrap>h2{font-size:2rem;margin-bottom:28px}
+.about{display:grid;grid-template-columns:200px 1fr;gap:36px;align-items:start}
+.about img{width:200px;height:200px;object-fit:cover;border-radius:8px;border:1px solid var(--line)}
+.about p{margin:0 0 14px;max-width:62ch}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:20px}
+.skills div{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:20px}
+.skills h3{font-size:1.15rem;margin-bottom:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
+.chips li{background:var(--accent-soft);color:#084f55;border-radius:4px;padding:3px 10px;font-size:.9rem;font-weight:500}
+.job{display:grid;grid-template-columns:200px 1fr;gap:12px 36px;padding:26px 0;border-bottom:1px solid var(--line)}
+.job:first-of-type{padding-top:0}
+.job .when{color:var(--muted);font-size:.95rem}
+.job h3{font-size:1.3rem}
+.job .org{color:var(--muted);margin:2px 0 12px}
+.job ul{margin:0;padding-left:1.1em;max-width:68ch}
+.job li{margin-bottom:6px}
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px}
+.proj{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:26px}
+.proj h3{font-size:1.35rem;margin-bottom:6px}
+.proj .tools{color:var(--accent);font-weight:600;font-size:.92rem;margin:0 0 12px}
+.proj ul{margin:0;padding-left:1.1em}
+.proj li{margin-bottom:6px}
+.tag{display:inline-block;margin-bottom:10px;padding:2px 10px;border-radius:4px;background:var(--soon-bg);color:var(--soon);font-size:.85rem;font-weight:600}
+.edu{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:36px}
+.edu h3{font-size:1.15rem;margin-bottom:4px}
+.edu p{margin:0 0 14px;color:var(--muted)}
+.contact p{max-width:52ch}
+footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+@media(max-width:780px){
+ .about,.job{grid-template-columns:1fr}
+ .about img{width:140px;height:140px}
+ .nav ul{gap:14px}
+ .nav strong{display:none}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="nav">
+ <div class="wrap">
+  <strong>Anita Torki</strong>
+  <nav aria-label="Main"><ul>
+   <li><a href="#about">About</a></li>
+   <li><a href="#skills">Skills</a></li>
+   <li><a href="#experience">Experience</a></li>
+   <li><a href="#projects">Projects</a></li>
+   <li><a href="#education">Education</a></li>
+   <li><a href="#contact">Contact</a></li>
+  </ul></nav>
+ </div>
+</header>
+
+<main>
+<div class="hero">
+ <div class="wrap">
+  <h1>Data analyst turning research rigor into data science.</h1>
+  <p class="lead">I clean, validate, and automate data workflows in Python and SQL, and I bring statistics and research methods from a psychology background. I am now building my machine learning skills to move into data science.</p>
+  <div class="btns">
+   <a class="btn primary" href="mailto:anita.trkh@gmail.com">Email me</a>
+   <a class="btn ghost" href="https://www.linkedin.com/in/anita-torki/">LinkedIn</a>
+   <a class="btn ghost" href="https://github.com/Anitatorki">GitHub</a>
+  </div>
+  <p class="meta">Toronto, Ontario. Currently: research data analysis and machine learning with Python.</p>
+ </div>
+</div>
+
+<section id="about"><div class="wrap">
+ <h2>About</h2>
+ <div class="about">
+  <img src="assets/jpg/Photo.jpg" alt="Portrait of Anita Torki">
+  <div>
+   <p>I am a data analyst with a Master's degree in Psychology and a Diploma in Information Technology – Programming. For several years I have turned complex datasets into clean, analysis-ready data and clear reports across research, healthcare, and business operations.</p>
+   <p>At Western University I built Python workflows that automate scheduling, messaging, and participant tracking for an EMA (ecological momentary assessment) study, and I monitor incoming data quality in real time. I also screened 200+ studies for a meta-analysis, extracting and coding data and working with effect sizes. At Payambaran Hospital I extracted data with SQL, built validation checks, and cut document and data retrieval time by about 30%.</p>
+   <p>My goal is a data science role where careful data handling, statistics, and machine learning come together. I am building that foundation through coursework and hands-on projects.</p>
+  </div>
+ </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+ <h2>Skills</h2>
+ <div class="skills">
+  <div><h3>Data and technical</h3><ul class="chips">
+   <li>Python (Pandas)</li><li>SQL</li><li>SPSS</li><li>Excel</li><li>Power BI</li><li>REDCap</li><li>Git/GitHub</li><li>Data cleaning</li><li>Validation</li><li>Quality assurance</li></ul></div>
+  <div><h3>Statistics and machine learning</h3><ul class="chips">
+   <li>Quantitative methods</li><li>Meta-analysis</li><li>Effect sizes</li><li>NumPy</li><li>Scikit-learn</li><li>Matplotlib</li><li>Machine learning with Python (coursework)</li></ul></div>
+  <div><h3>Research and operations</h3><ul class="chips">
+   <li>Literature screening</li><li>Data extraction</li><li>Study coding</li><li>Thematic analysis</li><li>Participant recruitment</li><li>EMA study monitoring</li><li>Protocol adherence</li><li>Research data management</li></ul></div>
+ </div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+ <h2>Experience</h2>
+
+ <div class="job">
+  <div class="when">2024 – 2026</div>
+  <div>
+   <h3>Research Assistant, Software and Data Automation</h3>
+   <p class="org">Western University, London, ON (remote)</p>
+   <ul>
+    <li>Screened 200+ peer-reviewed articles for meta-analytic inclusion, then extracted and coded study data with systematic accuracy checks.</li>
+    <li>Developed Python workflows to automate EMA scheduling, messaging, and participant tracking, reducing manual coordination.</li>
+    <li>Cleaned and prepared datasets in Python and SPSS for statistical analysis.</li>
+    <li>Monitored real-time EMA data quality via Twilio, flagging missing and inconsistent responses for follow-up.</li>
+   </ul>
+  </div>
+ </div>
+
+ <div class="job">
+  <div class="when">2022 – 2024</div>
+  <div>
+   <h3>Research Data Analyst</h3>
+   <p class="org">Azad University, Tehran, Iran (remote)</p>
+   <ul>
+    <li>Analyzed quantitative data in SPSS and interpreted results to support research findings.</li>
+    <li>Collected survey and interview data on psychological factors affecting mental well-being, applying systematic error checks.</li>
+    <li>Built and maintained data management systems for consistent, analysis-ready collection and error checking.</li>
+    <li>Coded and analyzed qualitative data using thematic analysis to identify key themes.</li>
+    <li>Screened and recruited participants and monitored EMA data collection for a study of 100+ participants, supporting protocol adherence.</li>
+   </ul>
+  </div>
+ </div>
+
+ <div class="job">
+  <div class="when">2019 – 2022</div>
+  <div>
+   <h3>Research Data Analyst</h3>
+   <p class="org">Payambaran Hospital, Tehran, Iran (on-site)</p>
+   <ul>
+    <li>Extracted data with SQL and cleaned it using Python (Pandas) and Excel for analysis and reporting.</li>
+    <li>Entered, exported, and verified study data in REDCap.</li>
+    <li>Analyzed trends and performance patterns using Python and Excel to support data-driven decisions.</li>
+    <li>Built data validation checks to keep reports accurate and consistent.</li>
+    <li>Produced recurring reports tracking operational performance.</li>
+    <li>Reduced document and data retrieval time by about 30% by redesigning information management and reporting processes.</li>
+   </ul>
+  </div>
+ </div>
+</section>
+
+<section id="projects"><div class="wrap">
+ <h2>Projects</h2>
+ <div class="projects">
+  <article class="proj">
+   <h3>Healthcare operations data analysis</h3>
+   <p class="tools">Python, Pandas, SQL, Power BI</p>
+   <ul>
+    <li>Cleaned and validated healthcare appointment data, identifying missing and inconsistent records.</li>
+    <li>Analyzed appointment volume, wait times, cancellations, and no-shows to find operational trends and bottlenecks.</li>
+    <li>Built Power BI visuals and KPIs to communicate findings and support decisions.</li>
+   </ul>
+  </article>
+  <article class="proj">
+   <h3>EMA scheduling and messaging automation</h3>
+   <p class="tools">Python, Excel, Twilio API</p>
+   <ul>
+    <li>Built an automated system for study scheduling and participant messaging.</li>
+    <li>Generated randomized schedules, processed participant time zones, and automated reminder messages.</li>
+    <li>Improved scheduling accuracy and reduced manual workload for study staff.</li>
+   </ul>
+  </article>
+  <article class="proj">
+   <span class="tag">In progress</span>
+   <h3>Appointment no-show prediction</h3>
+   <p class="tools">Python, Pandas, Scikit-learn</p>
+   <ul>
+    <li>Extending the healthcare appointment analysis into a model that predicts which appointments will be missed.</li>
+    <li>Plan: compare baseline and tuned models, and report results with clear evaluation metrics.</li>
+   </ul>
+  </article>
+ </div>
+ <p style="margin-top:22px">More code is on <a href="https://github.com/Anitatorki">GitHub</a>. Some repositories are private; email me for access.</p>
+</div></section>
+
+<section id="education"><div class="wrap">
+ <h2>Education and certifications</h2>
+ <div class="edu">
+  <div>
+   <h3>Diploma in Information Technology – Programming</h3>
+   <p>College LaSalle, Montreal, 2022 – 2024</p>
+   <h3>Master's Degree in Psychology</h3>
+   <p>Azad University, Iran, 2017 – 2020<br>WES Canadian equivalency: Master's degree</p>
+  </div>
+  <div>
+   <h3>Data and programming</h3>
+   <p>Programming with Python, Coursera, 2025<br>Machine Learning with Python, Maktabkhooneh, 2025<br>SPSS for Research, Udemy, 2025<br>Academic Research Foundations: Quantitative, LinkedIn, 2025</p>
+   <h3>Clinical research</h3>
+   <p>Good Clinical Practice (GCP), CITI, 2026<br>Health Canada Division 5 (Clinical Trials), CITI, 2026<br>Responsible Conduct of Research, CITI, 2026<br>TCPS 2: CORE 2022, 2025</p>
+  </div>
+ </div>
+</div></section>
+
+<section id="contact"><div class="wrap contact">
+ <h2>Contact</h2>
+ <p>I am open to data analyst and junior data science roles in Toronto and remote positions. The fastest way to reach me is by email.</p>
+ <div class="btns">
+  <a class="btn primary" href="mailto:anita.trkh@gmail.com">anita.trkh@gmail.com</a>
+  <a class="btn ghost" href="https://www.linkedin.com/in/anita-torki/">LinkedIn</a>
+  <a class="btn ghost" href="https://github.com/Anitatorki">GitHub</a>
+ </div>
+</div></section>
+ 
+</main>
+
+<footer><div class="wrap">&copy; 2026 Anita Torki</div></footer>
+</body>
+</html>
