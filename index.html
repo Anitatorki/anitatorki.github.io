@@ -11,20 +11,21 @@
 <style>
 :root{--bg:#f5f7f9;--ink:#13233a;--muted:#55657a;--line:#d8dfe7;--accent:#0b6e75;--accent-soft:#e0f0f1;--card:#fff;--soon:#8a5a14;--soon-bg:#fbefd9}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:72px}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 Figtree,system-ui,sans-serif}
+html{scroll-behavior:smooth;scroll-padding-top:72px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 Figtree,system-ui,sans-serif;overflow-wrap:break-word}
 h1,h2,h3{font-family:Newsreader,Georgia,serif;line-height:1.2;margin:0}
 a{color:var(--accent)}
 a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 .wrap{max-width:1040px;margin:0 auto;padding:0 24px}
 header.nav{position:sticky;top:0;z-index:5;background:rgba(245,247,249,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
-.nav .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
-.nav strong{font-family:Newsreader,serif;font-size:1.2rem}
+.nav .wrap{display:flex;justify-content:space-between;align-items:center;height:60px;gap:16px}
+.nav strong{font-family:Newsreader,serif;font-size:1.2rem;white-space:nowrap}
+.nav nav{min-width:0}
 .nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0}
-.nav a{text-decoration:none;color:var(--muted);font-weight:500;font-size:.95rem}
+.nav a{text-decoration:none;color:var(--muted);font-weight:500;font-size:.95rem;white-space:nowrap}
 .nav a:hover{color:var(--accent)}
 .hero{padding:80px 0 64px}
-.hero h1{font-size:clamp(2.2rem,5vw,3.5rem);font-weight:600;letter-spacing:-.01em;max-width:18em}
+.hero h1{font-size:clamp(2rem,5vw,3.5rem);font-weight:600;letter-spacing:-.01em;max-width:18em}
 .hero p.lead{font-size:1.2rem;color:var(--muted);margin:20px 0 28px;max-width:36em}
 .btns{display:flex;flex-wrap:wrap;gap:12px}
 .btn{display:inline-block;padding:11px 20px;border-radius:6px;font-weight:600;text-decoration:none;border:1.5px solid var(--accent)}
@@ -35,8 +36,8 @@ header.nav{position:sticky;top:0;z-index:5;background:rgba(245,247,249,.94);back
 .meta{margin-top:22px;color:var(--muted);font-size:.95rem}
 section{padding:56px 0;border-top:1px solid var(--line)}
 section>.wrap>h2{font-size:2rem;margin-bottom:28px}
-.about p{margin:0 0 14px;max-width:68ch;text-align:justify;hyphens:auto}
-.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:20px}
+.about p{margin:0 0 14px;max-width:68ch}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(270px,100%),1fr));gap:20px}
 .skills div{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:20px}
 .skills h3{font-size:1.15rem;margin-bottom:12px}
 .chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
@@ -48,7 +49,7 @@ section>.wrap>h2{font-size:2rem;margin-bottom:28px}
 .job .org{color:var(--muted);margin:2px 0 12px}
 .job ul{margin:0;padding-left:1.1em;max-width:68ch}
 .job li{margin-bottom:6px}
-.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px}
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:24px}
 .proj{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:26px}
 .proj h3{font-size:1.35rem;margin-bottom:6px}
 .proj .tools{color:var(--accent);font-weight:600;font-size:.92rem;margin:0 0 12px}
@@ -56,16 +57,35 @@ section>.wrap>h2{font-size:2rem;margin-bottom:28px}
 .proj ul{margin:0;padding-left:1.1em}
 .proj li{margin-bottom:6px}
 .tag{display:inline-block;margin-bottom:10px;padding:2px 10px;border-radius:4px;background:var(--soon-bg);color:var(--soon);font-size:.85rem;font-weight:600}
-.edu{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:36px}
+.edu{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:36px}
 .edu h3{font-size:1.15rem;margin-bottom:4px}
 .edu p{margin:0 0 14px;color:var(--muted)}
 .contact p{max-width:52ch}
 footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
-@media(max-width:780px){
- .job{grid-template-columns:1fr}
- .nav ul{gap:14px}
- .nav strong{display:none}
+
+/* Laptop and large screens */
+@media(min-width:781px){
+ .about p{text-align:justify;hyphens:auto}
 }
+
+/* Tablets and phones */
+@media(max-width:780px){
+ .wrap{padding:0 18px}
+ .nav .wrap{height:56px}
+ .nav strong{display:none}
+ .nav nav{width:100%;overflow-x:auto;scrollbar-width:none}
+ .nav nav::-webkit-scrollbar{display:none}
+ .nav ul{gap:18px;width:max-content}
+ .hero{padding:44px 0 40px}
+ .hero p.lead{font-size:1.08rem}
+ section{padding:40px 0}
+ section>.wrap>h2{font-size:1.7rem;margin-bottom:20px}
+ .job{grid-template-columns:1fr;gap:4px;padding:22px 0}
+ .job h3{font-size:1.2rem}
+ .proj{padding:20px}
+ .btn{padding:10px 16px}
+}
+
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
@@ -166,8 +186,7 @@ footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-s
    </ul>
   </div>
  </div>
-
-</section>
+</div></section>
 
 <section id="projects"><div class="wrap">
  <h2>Projects</h2>
