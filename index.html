@@ -35,9 +35,7 @@ header.nav{position:sticky;top:0;z-index:5;background:rgba(245,247,249,.94);back
 .meta{margin-top:22px;color:var(--muted);font-size:.95rem}
 section{padding:56px 0;border-top:1px solid var(--line)}
 section>.wrap>h2{font-size:2rem;margin-bottom:28px}
-.about{display:grid;grid-template-columns:200px 1fr;gap:36px;align-items:start}
-.about img{width:200px;height:200px;object-fit:cover;border-radius:8px;border:1px solid var(--line)}
-.about p{margin:0 0 14px;max-width:62ch}
+.about p{margin:0 0 14px;max-width:68ch}
 .skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:20px}
 .skills div{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:20px}
 .skills h3{font-size:1.15rem;margin-bottom:12px}
@@ -54,6 +52,7 @@ section>.wrap>h2{font-size:2rem;margin-bottom:28px}
 .proj{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:26px}
 .proj h3{font-size:1.35rem;margin-bottom:6px}
 .proj .tools{color:var(--accent);font-weight:600;font-size:.92rem;margin:0 0 12px}
+.proj .where{margin:0 0 12px;color:var(--muted);font-size:.95rem}
 .proj ul{margin:0;padding-left:1.1em}
 .proj li{margin-bottom:6px}
 .tag{display:inline-block;margin-bottom:10px;padding:2px 10px;border-radius:4px;background:var(--soon-bg);color:var(--soon);font-size:.85rem;font-weight:600}
@@ -63,8 +62,7 @@ section>.wrap>h2{font-size:2rem;margin-bottom:28px}
 .contact p{max-width:52ch}
 footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
 @media(max-width:780px){
- .about,.job{grid-template-columns:1fr}
- .about img{width:140px;height:140px}
+ .job{grid-template-columns:1fr}
  .nav ul{gap:14px}
  .nav strong{display:none}
 }
@@ -103,11 +101,9 @@ footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 <section id="about"><div class="wrap">
  <h2>About</h2>
  <div class="about">
-  <div>
-   <p>I am a data analyst with a Master's degree in Psychology and a Diploma in Information Technology – Programming. For several years I have turned complex datasets into clean, analysis-ready data and clear reports across research, healthcare, and business operations.</p>
-   <p>At Western University I built Python workflows that automate scheduling, messaging, and participant tracking for an EMA (ecological momentary assessment) study, and I monitor incoming data quality in real time. I also screened 200+ studies for a meta-analysis, extracting and coding data and working with effect sizes. At Payambaran Hospital I extracted data with SQL, built validation checks, and cut document and data retrieval time by about 30%.</p>
-   <p>My goal is a data science role where careful data handling, statistics, and machine learning come together. I am building that foundation through coursework and hands-on projects.</p>
-  </div>
+  <p>I am a data analyst with a Master's degree in Psychology and a Diploma in Information Technology – Programming. For several years I have turned complex datasets into clean, analysis-ready data and clear reports across research, healthcare, and business operations.</p>
+  <p>At Western University I built Python workflows that automate scheduling, messaging, and participant tracking for an EMA (ecological momentary assessment) study, and I monitor incoming data quality in real time. I also screened 200+ studies for a meta-analysis, extracting and coding data and working with effect sizes. At Payambaran Hospital I extracted data with SQL, built validation checks, and cut document and data retrieval time by about 30%.</p>
+  <p>My goal is a data science role where careful data handling, statistics, and machine learning come together. I am building that foundation through coursework and hands-on projects.</p>
  </div>
 </div></section>
 
@@ -130,7 +126,7 @@ footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-s
   <div class="when">2024 – 2026</div>
   <div>
    <h3>Research Assistant, Software and Data Automation</h3>
-   <p class="org">Western University, London, ON (remote)</p>
+   <p class="org">RoAD Lab, Western University, London, ON (remote)</p>
    <ul>
     <li>Screened 200+ peer-reviewed articles for meta-analytic inclusion, then extracted and coded study data with systematic accuracy checks.</li>
     <li>Developed Python workflows to automate EMA scheduling, messaging, and participant tracking, reducing manual coordination.</li>
@@ -170,6 +166,7 @@ footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-s
    </ul>
   </div>
  </div>
+
 </section>
 
 <section id="projects"><div class="wrap">
@@ -185,12 +182,13 @@ footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-s
    </ul>
   </article>
   <article class="proj">
-   <h3>EMA scheduling and messaging automation</h3>
+   <h3>EMA scheduling and messaging automation system</h3>
    <p class="tools">Python, Excel, Twilio API</p>
+   <p class="where">RoAD Lab, Western University, 2025</p>
    <ul>
-    <li>Built an automated system for study scheduling and participant messaging.</li>
-    <li>Generated randomized schedules, processed participant time zones, and automated reminder messages.</li>
-    <li>Improved scheduling accuracy and reduced manual workload for study staff.</li>
+    <li>Developed an automated system for ecological momentary assessment (EMA) scheduling and participant messaging.</li>
+    <li>Built scripts to generate randomized schedules, process participant time zones, and automate reminder delivery.</li>
+    <li>Improved accuracy and significantly reduced coordination time and manual workload for study staff.</li>
    </ul>
   </article>
   <article class="proj">
@@ -233,7 +231,6 @@ footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-s
   <a class="btn ghost" href="https://github.com/Anitatorki">GitHub</a>
  </div>
 </div></section>
- 
 </main>
 
 <footer><div class="wrap">&copy; 2026 Anita Torki</div></footer>
